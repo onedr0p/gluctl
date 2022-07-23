@@ -1,3 +1,3 @@
 # gluctl
 
-gluing things
+The glue that helps maintain a Kubernetes Home Lab
