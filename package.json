@@ -1,0 +1,26 @@
+{
+  "name": "gluctl",
+  "description": "gluing stuff",
+  "contributors": [
+    "j_r0dd",
+    "onedr0p"
+  ],
+  "version": "0.0.1",
+  "main": "gluctl",
+  "license" : "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onedr0p/gluctl"
+  },
+  "keywords": [
+    "k8s",
+    "glue"
+  ],
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "zx": "^7.0.7"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "gluctl": "javascript",
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "standard.enable": true,
+  "standard.engine": "standard",
+  "standard.usePackageJson": true,
+  "standard.workingDirectories": ["${workspaceFolder}"],
+  "standard.autoFixOnSave": true
+}
