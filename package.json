@@ -20,6 +20,7 @@
     "node": ">= 18.0.0"
   },
   "keywords": [
+    "k8s-at-home",
     "k8s",
     "glue"
   ],
