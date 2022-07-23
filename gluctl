@@ -1,7 +1,7 @@
 #!/usr/bin/env zx
 import { $, argv } from 'zx'
 import { commandRunner } from './lib/index.js'
-
+const [, cmd, ...args] = argv._
 argv.debug ? $.verbose = true : $.verbose = false
 
-await commandRunner(argv._[1], argv._[2])
+await commandRunner(cmd, ...args)
