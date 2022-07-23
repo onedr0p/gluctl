@@ -8,7 +8,8 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "glu": ["./lib/index.mjs"]
+      "gluctl": ["./gluctl"],
+      "lib": ["./lib"]
     }
   },
   "exclude": ["node_modules", "**/node_modules/*"]

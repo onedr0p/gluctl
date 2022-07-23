@@ -1,6 +1,7 @@
 {
   "name": "gluctl",
-  "description": "gluing stuff",
+  "description": "The glue that helps maintain a Kubernetes Home Lab",
+  "type": "module",
   "contributors": [
     "j_r0dd",
     "onedr0p"
@@ -11,6 +12,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/onedr0p/gluctl"
+  },
+  "bin": {
+    "gluctl": "./gluctl"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
   },
   "keywords": [
     "k8s",
