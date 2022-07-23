@@ -1,6 +1,6 @@
 #!/usr/bin/env zx
 import { $, argv } from 'zx'
-import { commandRunner } from './lib/index.mjs'
+import { commandRunner } from './lib/index.js'
 
 argv.debug ? $.verbose = true : $.verbose = false
 
