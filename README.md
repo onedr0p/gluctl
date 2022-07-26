@@ -15,7 +15,7 @@
 
 <br>
 
-Simply add new class and/or function files in [lib](./lib/) and add an export entry in [lib/index.js](lib/index.js). This will eventually be more dynamic in near future. `gluctl` serves as the main entrypoint to everything. There it runs the `commandRunner` helper function which accepts a command and any number of args.
+Simply run `npm install` to install dependencies, then add new class and/or function files in [lib](./lib/) and add an export entry in [lib/index.js](lib/index.js). This will eventually be more dynamic in near future. `gluctl` serves as the main entrypoint to everything. There it runs the `commandRunner` helper function which accepts a command and any number of args.
 
 <br>
 
