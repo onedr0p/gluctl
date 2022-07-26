@@ -15,6 +15,9 @@
     "type": "git",
     "url": "https://github.com/onedr0p/gluctl"
   },
+  "scripts": {
+    "build": "./scripts/build.mjs"
+  },
   "bin": {
     "gluctl": "./gluctl"
   },
@@ -28,6 +31,8 @@
   ],
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.9",
+    "archiver": "^5.3.1",
+    "caxa": "^2.1.0",
     "standard": "^17.0.0"
   },
   "dependencies": {

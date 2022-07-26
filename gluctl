@@ -1,7 +1,9 @@
 #!/usr/bin/env zx
 import { $, argv } from 'zx'
 import { commandRunner } from './lib/index.js'
-const [, cmd, ...args] = argv._
+// normally it would be slice 2 (node, ./gluctl, args), but with zx we needed slice 3 (node, zx, ./gluctl, args)
+// ...but probably need to be smarter about this if we wanted to allow running from node directly instead of zx?
+const [,,, cmd, ...args] = process.argv
 
 argv.debug ? $.verbose = true : $.verbose = false
 
