@@ -9,7 +9,7 @@
   ],
   "version": "0.0.1",
   "main": "gluctl",
-  "license" : "SEE LICENSE IN LICENSE.md",
+  "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/onedr0p/gluctl"
@@ -30,6 +30,7 @@
     "standard": "^17.0.0"
   },
   "dependencies": {
+    "yargs": "^17.5.1",
     "zx": "^7.0.7"
   }
 }
