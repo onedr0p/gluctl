@@ -1,0 +1,8 @@
+---
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+    authors:
+      - jr0dd@@users.noreply.github.com
+  categories: []
