@@ -2,6 +2,7 @@
 import { $, path, os, fs, argv, fetch, cd, within, chalk } from 'zx'
 import { finished } from 'node:stream/promises'
 import archiver from 'archiver'
+import crypto from 'crypto'
 
 if (argv.h || argv.help) {
   console.log(`${argv._} [--target <name of target>] [--node-version <version>]`)
@@ -196,6 +197,15 @@ async function buildTarget ({ platform, arch, ext, targetExt, nodeVersion, tmpDi
     command: ['{{caxa}}/node_modules/.bin/node', '{{caxa}}/node_modules/.bin/zx', '{{caxa}}/gluctl']
   }))
   distStream.end()
+
+  // write package checksum
+  const distBuffer = await fs.readFile(targetFile)
+  const hash = crypto.createHash('sha256')
+  hash.update(distBuffer)
+  const checksum = hash.digest('hex')
+  const checksumFile = path.join(distDir, `checksums.txt`)
+  await fs.appendFile(checksumFile, `${checksum}  gluctl-${platform}-${arch}${targetExt}\n`)
+
   return targetFile
 }
 
