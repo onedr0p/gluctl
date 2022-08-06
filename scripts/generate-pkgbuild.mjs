@@ -10,7 +10,7 @@ const maintainer = 'Toboshii Nakama <toboshii at gmail dot com>'
 const sourceUrl = 'https://github.com/onedr0p/gluctl'
 const tag = argv['release-tag'] || argv.t || process.env.RELEASE_TAG
 const pkgRelease = argv['pkg-release'] || process.env.PKG_RELEASE || 1
-const checksumFile = argv['checkum-file'] || argv.c || process.env.CHECKSUM_FILE || './dist/checksums.txt'
+const checksumFile = argv['checksum-file'] || argv.c || process.env.CHECKSUM_FILE || './dist/checksums.txt'
 const outputDir = argv['output-dir'] || argv.o || process.env.OUTPUT_DIR || `${os.tmpdir()}/pkgbuild/gluctl-bin`
 
 if (!tag) {
