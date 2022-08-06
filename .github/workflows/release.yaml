@@ -36,7 +36,7 @@ jobs:
           npm run build --if-present
 
       - name: Upload checksums
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: checksums
           path: dist/checksums.txt
@@ -74,7 +74,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Download checksums
-        uses: actions/download-artifact@v2.0.9
+        uses: actions/download-artifact@v3
         with:
           name: checksums
           path: ./checksums.txt
