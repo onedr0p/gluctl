@@ -30,10 +30,10 @@
     "glue"
   ],
   "devDependencies": {
-    "@babel/eslint-parser": "^7.18.9",
-    "archiver": "^5.3.1",
-    "caxa": "^2.1.0",
-    "standard": "^17.0.0"
+    "@babel/eslint-parser": "7.18.9",
+    "archiver": "5.3.1",
+    "caxa": "2.1.0",
+    "standard": "17.0.0"
   },
   "dependencies": {
     "yargs": "^17.5.1",
