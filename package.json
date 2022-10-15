@@ -32,7 +32,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.18.9",
     "archiver": "5.3.1",
-    "caxa": "2.1.0",
+    "caxa": "3.0.1",
     "standard": "17.0.0"
   },
   "dependencies": {
