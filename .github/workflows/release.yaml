@@ -87,7 +87,7 @@ jobs:
         run: ./scripts/generate-pkgbuild.mjs
 
       - name: Publish gluctl-bin to the AUR
-        uses: KSXGitHub/github-actions-deploy-aur@v2.5.0
+        uses: KSXGitHub/github-actions-deploy-aur@v2.6.0
         with:
           pkgname: gluctl-bin
           pkgbuild: ./pkgbuild/gluctl-bin/PKGBUILD
